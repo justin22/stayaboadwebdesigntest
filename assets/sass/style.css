@@ -1,0 +1,98 @@
+html, body {
+  height: 100%;
+  font-family: 'Work Sans', sans-serif; }
+
+.container-fluid {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+.row {
+  margin-right: 0 !important; }
+
+.standard-padding {
+  padding: 10pt 30pt; }
+
+#welcome-banner {
+  /* The image used */
+  background-image: url("../images/img-bg.jpg");
+  /* Set a specific height */
+  min-height: 350px;
+  top: 0;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#main-nav {
+  width: 100%; }
+
+.navbar-nav {
+  flex-direction: row-reverse !important; }
+  .navbar-nav a.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 15pt; }
+    .navbar-nav a.nav-link:hover {
+      text-decoration: none; }
+
+.btn-custom-outline {
+  position: relative;
+  line-height: 29px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  border-radius: 30px;
+  text-transform: capitalize;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 4px 20px; }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 20pt !important;
+  padding-left: 20pt !important; }
+
+*:focus {
+  outline: none; }
+
+.custom-input-group {
+  border-bottom: 2pt solid #fff;
+  padding-bottom: 12pt; }
+  .custom-input-group input[type=text] {
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 20pt; }
+    .custom-input-group input[type=text]:focus {
+      outline: none; }
+  .custom-input-group input::placeholder {
+    color: #fff;
+    font-size: 20pt; }
+  .custom-input-group .input-group-append {
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    width: 70pt; }
+    .custom-input-group .input-group-append .input-group-text {
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+      border-radius: 30px; }
+
+.content-container {
+  padding: 50pt 0; }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  position: relative;
+  line-height: 29px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  border-radius: 30px;
+  text-transform: capitalize;
+  background-color: #000;
+  border: 1px solid #000;
+  padding: 4px 20px; }
+
+/*# sourceMappingURL=style.css.map */
