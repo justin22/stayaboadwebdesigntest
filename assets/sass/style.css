@@ -2,6 +2,9 @@
   .standard-padding {
     padding: 10pt !important; }
 
+  .navbar-nav {
+    flex-direction: column-reverse !important; }
+
   .content-container {
     padding: 0 !important; }
 
@@ -24,6 +27,10 @@ button:focus, .custom-input-group input[type=text]:focus {
 .container-fluid {
   padding: 0 !important;
   margin: 0 !important; }
+
+.row {
+  margin-right: auto !important;
+  margin-left: auto !important; }
 
 .standard-padding {
   padding: 10pt 40pt; }
@@ -77,11 +84,8 @@ img {
   border: 1px solid #fff; }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 20pt !important;
-  padding-left: 20pt !important; }
-
-*:focus {
-  outline: none; }
+  padding-right: 22pt !important;
+  padding-left: 22pt !important; }
 
 .custom-input-group {
   border-bottom: 2pt solid #fff;
@@ -106,13 +110,18 @@ img {
       text-align: center;
       display: inline-block;
       border-radius: 30px;
-      padding: 10pt;
+      padding: 8pt;
       cursor: pointer; }
 
 .content-container {
   padding: 50pt 0; }
-  .content-container .card .title small {
-    font-size: 12pt; }
+  .content-container .card img {
+    width: 100%; }
+  .content-container .card .title {
+    font-weight: 800; }
+    .content-container .card .title small {
+      font-size: 12pt;
+      font-weight: bold; }
 
 .nav-pills li.nav-item {
   margin: 2pt; }
@@ -139,39 +148,14 @@ img {
   background-color: #fff;
   margin: 8px 0; }
 
-.fixed-header {
-  padding-top: 30pt;
-  padding-bottom: 30pt;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  width: 100%;
-  -ms-animation-name: fadeInDown;
-  -moz-animation-name: fadeInDown;
-  -op-animation-name: fadeInDown;
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-  -ms-animation-duration: 500ms;
-  -moz-animation-duration: 500ms;
-  -op-animation-duration: 500ms;
-  -webkit-animation-duration: 500ms;
-  animation-duration: 500ms;
-  -ms-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -op-animation-timing-function: linear;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -ms-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -op-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1; }
-  .fixed-header a.nav-link {
-    color: #000 !important;
-    text-decoration: none;
-    padding-right: 15pt; }
-    .fixed-header a.nav-link:hover {
-      text-decoration: none; }
+.image-on-image {
+  position: relative; }
+  .image-on-image .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .image-on-image .center img {
+      width: 20pt; }
 
 /*# sourceMappingURL=style.css.map */

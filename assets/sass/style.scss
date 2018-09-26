@@ -1,10 +1,11 @@
-@import "partials/colors";
-@import "partials/media";
+@import "partials/colors"; //import colors
+@import "partials/media"; //import media queries
 
 html,body {
 	height:100%; 
 	font-family: 'Work Sans', sans-serif;
 }
+//override button and input shadow
 button, .custom-input-group input[type=text] {
 	&:focus {
 		outline: none;
@@ -15,12 +16,17 @@ button, .custom-input-group input[type=text] {
 	padding: 0 !important;
 	margin: 0 !important;
 }
+.row {
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
 .standard-padding {
 	padding: 10pt 40pt;
 }
 img {
 	max-width: 100%;
 }
+//first container on the page
 #welcome-banner {
 	background-image: url('../images/img-bg.jpg');
 	min-height: 350px; 
@@ -41,7 +47,7 @@ img {
 		margin-top: 30%;
 	}
 }
-
+//navigation
 #main-nav {
 	//position: absolute;
 	width: 100%;
@@ -77,12 +83,8 @@ img {
     border: 1px solid $secondary-color;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
-	padding-right: 20pt !important;
-    padding-left: 20pt !important;
-}
-
-*:focus {
-    outline: none;
+	padding-right: 22pt !important;
+    padding-left: 22pt !important;
 }
 
 .custom-input-group {
@@ -112,7 +114,7 @@ img {
 			text-align: center;
 			display: inline-block;
 			border-radius: 30px;
-			padding: 10pt;
+			padding: 8pt;
 			cursor: pointer;
 		}
 	}
@@ -121,9 +123,14 @@ img {
 .content-container {
 	padding: 50pt 0;
 	.card {
+		img {
+			width: 100%;
+		}
 		.title{
+			font-weight: 800;
 			small {
 				font-size: 12pt;
+				font-weight: bold;
 			}
 		}
 	}
@@ -150,46 +157,25 @@ img {
 		border: 1px solid $primary-color;
 	}
 }
+//hamburger menu icon
 .ham-item {
 	width: 30px;
     height: 2px;
     background-color: $secondary-color;
     margin: 8px 0;
 }
-.fixed-header {
-	padding-top: 30pt;
-    padding-bottom: 30pt;
-	position: fixed;
-    top: 0;
-	left: 0;
-	z-index: 5;
-    width: 100%;
-    -ms-animation-name: fadeInDown;
-    -moz-animation-name: fadeInDown;
-    -op-animation-name: fadeInDown;
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
-    -ms-animation-duration: 500ms;
-    -moz-animation-duration: 500ms;
-    -op-animation-duration: 500ms;
-    -webkit-animation-duration: 500ms;
-    animation-duration: 500ms;
-    -ms-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -op-animation-timing-function: linear;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -ms-animation-iteration-count: 1;
-    -moz-animation-iteration-count: 1;
-    -op-animation-iteration-count: 1;
-    -webkit-animation-iteration-count: 1;
-	animation-iteration-count: 1;
-	a.nav-link {
-		color: $primary-color !important;
-		text-decoration: none;
-		padding-right: 15pt;
-		&:hover {
-			text-decoration: none;
+
+//map and pin div - image on image
+.image-on-image {
+	position: relative;
+	.center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		
+		img {
+			width: 20pt;
 		}
 	}
 }
