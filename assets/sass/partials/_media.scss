@@ -1,0 +1,25 @@
+@media only screen and (max-width: 600px) {
+    .standard-padding {
+        padding: 10pt !important;
+    }
+    .content-container {
+        padding: 0 !important;
+    }
+    #welcome-banner {
+        // min-height: 700pt !important;
+        .search-container {
+            margin-top: 70% !important;
+        }
+    }
+}
+@media (min-width: 1300px) {    
+    #welcome-banner {
+        background-image: url('../images/img-bg@2x.jpg') !important;
+   } 
+}
+
+@media (min-width: 2000px) {    
+    #welcome-banner {
+        background-image: url('../images/img-bg@3x.jpg') !important;
+   } 
+}
